@@ -1,0 +1,14 @@
+*.synctex.gz
+.project
+output/
+bibliographie.bib.sav
+dokumentation.*
+!dokumentation.tex
+*.pdf
+*.swp
+*.backup
+*.bak
+*.orig
+*compile.log
+*.log
+!appendix/*

@@ -1,0 +1,83 @@
+\newcommand{\defTitle}{Titel}
+\newcommand{\defAuthor}{Autor}
+\newcommand{\defDate}{Abgabedatum}
+\newcommand{\defArbeit}{T3-1000}
+\newcommand{\defStudiengang}{Angewandte Informatik}
+\newcommand{\defHochschule}{Dualen Hochschule Baden-Württemberg Mosbach}
+\newcommand{\defKurs}{MGH-INF19}
+\newcommand{\defMatrikelnummer}{123456789}
+\newcommand{\defBearbeitungszeitraum}{12 Wochen}
+
+\input{ads/header}
+
+\makeglossaries
+\input{ads/glossary}
+
+\begin{document}
+
+    % Deckblatt
+    \begin{spacing}{1}
+        \input{ads/deckblatt}
+    \end{spacing}
+    \newpage
+
+    \pagenumbering{Roman}
+
+    % Sperrvermerk
+    \input{ads/sperrvermerk}
+    \newpage
+
+    % Erklärung
+    \input{ads/erklaerung}
+    \newpage
+
+    % Abstract
+    \input{ads/abstract}
+    \newpage
+
+    \pagestyle{plain} % nur Seitenzahlen im Fuß
+    \RedeclareSectionCommand[beforeskip=20pt]{chapter} % stellt Abstand vor Kapitelüberschriften ein
+
+    % Inhaltsverzeichnis
+    \begin{spacing}{1.1}
+        \begingroup
+            % auskommentieren für Seitenzahlen unter Inhaltsverzeichnis
+            \pagestyle{empty}
+            \setcounter{tocdepth}{2}
+            \tableofcontents
+            \clearpage
+        \endgroup
+    \end{spacing}
+    \newpage
+
+    % Abkürzungsverzeichnis
+    \input{ads/acronyms}
+
+    % Abbildungsverzeichnis
+    \listoffigures
+
+    %Tabellenverzeichnis
+    \listoftables
+
+    % Quellcodeverzeichnis
+    \lstlistoflistings
+
+    \pagenumbering{arabic}
+    \pagestyle{headings} % Kolumnentitel im Kopf, Seitenzahlen im Fuß
+
+    % Inhalt
+    \foreach \i in {01,02,03,04,05,06,07,08,09,...,99} {%
+        \edef\FileName{content/\i kapitel}%
+            \IfFileExists{\FileName}{\input{\FileName}}{}
+    }
+
+    % Literaturverzeichnis
+    \printbibliography
+
+    % Glossar
+    \printglossary[style=altlist,title=Glossar]
+    
+    % sonstiger Anhang
+    \appendix
+    \input{ads/appendix}
+\end{document}

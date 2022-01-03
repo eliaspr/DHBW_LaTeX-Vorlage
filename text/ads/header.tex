@@ -1,0 +1,148 @@
+%!TEX root = ../dokumentation.tex
+
+\RequirePackage[l2tabu, orthodox]{nag} % weist in Commandozeile bzw. log auf veraltete LaTeX Syntax hin
+
+\documentclass[%
+    pdftex,
+    oneside,             % Einseitiger Druck.
+    12pt,                % Schriftgroesse
+    parskip=half,        % Halbe Zeile Abstand zwischen Absätzen.
+    headheight = 12pt,   % Höhe der Kopfzeile
+    headsepline,         % Linie nach Kopfzeile.
+    footsepline,         % Linie vor Fusszeile.
+    footheight = 16pt,   % Höhe der Fusszeile
+    abstracton,          % Abstract Überschriften
+    DIV=calc,            % Satzspiegel berechnen
+    BCOR=8mm,            % Bindekorrektur links: 8mm
+    headinclude=false,   % Kopfzeile nicht in den Satzspiegel einbeziehen
+    footinclude=false,   % Fußzeile nicht in den Satzspiegel einbeziehen
+    listof=totoc,        % Abbildungs-/ Tabellenverzeichnis im Inhaltsverzeichnis darstellen
+    toc=bibliography     % Literaturverzeichnis im Inhaltsverzeichnis darstellen
+]{scrbook}  % Koma-Script report-Klasse, fuer laengere Bachelorarbeiten alternativ auch: scrbook
+
+\usepackage{xstring}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage[margin=2.5cm,foot=1cm]{geometry}
+\usepackage[activate]{microtype}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{makeidx}
+\usepackage[autostyle=true,german=quotes]{csquotes}
+\usepackage{longtable}
+\usepackage[shortlabels]{enumitem}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{array}
+\usepackage{calc}
+\usepackage[right]{eurosym}
+\usepackage{wrapfig}
+\usepackage{pgffor}
+\usepackage[perpage, hang, multiple, stable]{footmisc}
+\usepackage[printonlyused, nohyperlinks]{acronym}
+\usepackage{listings}
+\usepackage{siunitx}
+\DeclareSIUnit\byte{B}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\usepackage[section]{placeins}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{diagbox}
+\usepackage{icomma}
+\pgfkeys{/pgf/number format/.cd,use comma}
+\usepackage{caption}
+\captionsetup{justification   = raggedright,
+              singlelinecheck = false}
+
+\makeatletter
+\AtBeginDocument{%
+  \expandafter\renewcommand\expandafter\subsection\expandafter{%
+    \expandafter\@fb@secFB\subsection
+  }%
+}
+\makeatother
+
+\usepackage{lmodern} % palatino oder goudysans, lmodern, libertine
+\definecolor{LinkColor}{HTML}{00007A}
+\definecolor{ListingBackground}{HTML}{FCF7DE}
+
+\title{\defTitle}
+\author{\defAuthor}
+\date{\defDate}
+
+\usepackage[%
+    pdftitle={\defTitle},
+    pdfauthor={\defAuthor},
+    pdfsubject={\defArbeit},
+    pdfcreator={pdflatex, LaTeX with KOMA-Script},
+    pdfpagemode=UseOutlines,
+    pdfdisplaydoctitle=true, 
+    pdflang={de}
+]{hyperref}
+
+\hypersetup{%
+    colorlinks=false, 
+    bookmarksnumbered=true
+}
+\usepackage{bookmark}
+
+\addtokomafont{caption}{\small}
+
+\usepackage[
+    backend=biber,
+    bibwarn=true,
+    bibencoding=utf8,
+    sortlocale=de_DE,
+    style=numeric-comp,
+    sorting=none
+]{biblatex}
+\addbibresource{bibliographie.bib}
+
+\sisetup{locale = DE} 
+
+\usepackage[nonumberlist,toc]{glossaries}
+\displaywidowpenalty=10000
+\graphicspath{{images/}}
+
+\lstloadlanguages{PHP,Python,Java,C,C++,bash}
+\lstset{%
+    language=Java,
+    numbers=left,
+    stepnumber=1,
+    numbersep=5pt,
+    numberstyle=\tiny,
+    breaklines=true,
+    breakautoindent=true,
+    postbreak=\space,
+    tabsize=4,
+    basicstyle=\ttfamily\scriptsize,
+    showspaces=false,
+    showstringspaces=false,
+    extendedchars=true,
+    captionpos=b,
+    backgroundcolor=\color{ListingBackground},
+    xleftmargin=0pt,
+    xrightmargin=0pt,
+    frame=single,
+    frameround=ffff,
+    rulecolor=\color{darkgray},
+    fillcolor=\color{ListingBackground},
+    keywordstyle=\color[rgb]{0.133,0.133,0.6},
+    commentstyle=\color[rgb]{0.133,0.545,0.133},
+    stringstyle=\color[rgb]{0.627,0.126,0.941}
+}
+\renewcommand\lstlistingname{Quellcode}
+\renewcommand\lstlistlistingname{Quellcodeverzeichnis}
+\def\lstlistingautorefname{Quellcode}
+
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.1}
+
+\numberwithin{equation}{section}
+
+\usetikzlibrary{arrows}
