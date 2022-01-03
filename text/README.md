@@ -1,7 +1,3 @@
-# Herunterladen der Vorlage
-
-`git clone https://github.com/eliaspr/DHBW_LaTeX-Vorlage meine-projektarbeit`
-
 # Verwendung der Vorlage
 
 Folgende Software muss **zwingend** installiert werden:
