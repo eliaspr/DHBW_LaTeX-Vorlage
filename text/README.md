@@ -11,8 +11,16 @@ Folgende Software ist empfohlen:
 
 Folgende Angaben müssen angepasst werden:
 
+- `ads/abstract.tex`: Zusammenfassung in Deutscher und ggf. englischer Sprache
+- `ads/acronyms.tex`: Abkürzungsverzeichnis
+- `ads/appendix.tex`: Anhänge
+- `ads/erklaerung.tex`: Ehrenwörtliche Erklärung
+- `ads/glossary.tex`: Glossareinträge
+- `ads/sperrvermerk.tex`: Sperrvermerk
 - `images/company.png`: Ersetzen durch das eigene Firmenlogo
 - `dokumentation.tex`, Zeilen 1-9: Angaben zur Arbeit
+
+Falls Sperrvermerk oder Anhang nicht notwendig sind, können die entsprechenden Abschnitte in der `dokumentation.tex` (Zeilen 27/28 bzw. 81/82) auskommentiert werden.
 
 Die $\LaTeX$-Dateien für die Kapitel befinden sich in `content/`, sämtliche Bilder werden in `images/` abgelegt.
 
