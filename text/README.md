@@ -1,7 +1,7 @@
 # Verwendung der Vorlage
 
 Folgende Software muss **zwingend** installiert werden:
-- $\LaTeX$-Compiler, empfohlen: `MikTeX` ([Download-Link](https://miktex.org/download)).
+- $\LaTeX$-Compiler, empfohlen: `MikTeX` ([Download-Link](https://miktex.org/download)). Bei der Installation wird gefragt, ob Dependencies ohne Nachfrage installiert werden dürfen. Hier wähle ich normalerweise `Ja`, dies ist aber mit einem gewissen Sicherheitsrisiko verbunden, falls nicht-vertraulicher $\LaTeX$-Code kompiliert werden sollte.
 - Perl-Interpreter, Linux- und Mac-User haben diesen anscheinend standardmäßig schon im System installiert. Windows-Nutzern ist StrawberryPerl zu empfehlen ([Download-Link](https://strawberryperl.com/)).
 
 Folgende Software ist empfohlen:
