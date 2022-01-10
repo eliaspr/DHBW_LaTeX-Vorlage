@@ -1,4 +1,4 @@
-LaTeX-Template für das Schreiben von wissenschaftlichen Arbeiten von [eliaspr](https://github.com/eliaspr).
+LaTeX-Template für das Schreiben von wissenschaftlichen Arbeiten von [eliaspr](https://github.com/eliaspr) auf Basis von [der Vorlage der DHBW Stuttgart](https://github.com/dhbw-horb/latexVorlage).
 
 Die LaTeX-Dateien und Skripte befinden sich zusammen mit der Anleitung zum Bauen (`README.md`) im `text`-Unterverzeichnis.
 
