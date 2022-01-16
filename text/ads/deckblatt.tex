@@ -19,11 +19,12 @@
     \begin{spacing}{1.2}
     \begin{tabbing}
         mmmmmmmmmmmmmmmmmmmmmmmmmm    \= \kill
-        \textbf{Bearbeitungszeitraum} \> \defBearbeitungszeitraum\\
-        \textbf{Matrikelnummer, Kurs} \> \defMatrikelnummer, \defKurs\\
-        \textbf{Ausbildungsfirma}     \> \defAusbildungsfirma\\
-                                      \> \defAusbildungsfirmaOrt\\
-        \textbf{Betreuer}             \> \defBetreuer\\
+        \textbf{Bearbeitungszeitraum}                      \> \defBearbeitungszeitraum\\
+        \textbf{Matrikelnummer, Kurs}                      \> \defMatrikelnummer, \defKurs\\
+        \textbf{Ausbildungsfirma}                          \> \defAusbildungsfirma\\
+                                                           \> \defAusbildungsfirmaOrt\\
+        \textbf{Betreuer der Ausbildungsfirma}             \> \defBetreuer\\
+        \ifdefined\defGutachter\textbf{Gutachter der DHBW} \> \defGutachter\\\fi
     \end{tabbing}
     \end{spacing}
     \vspace*{15mm}
