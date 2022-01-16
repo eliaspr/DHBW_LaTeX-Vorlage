@@ -20,7 +20,7 @@ Folgende Angaben müssen angepasst werden:
 - `images/company.png`: Ersetzen durch das eigene Firmenlogo
 - `dokumentation.tex`, Zeilen 1-12: Angaben zur Arbeit
 
-Falls Sperrvermerk oder Anhang nicht notwendig sind, können die entsprechenden Abschnitte in der `dokumentation.tex` (Zeilen 27/28 bzw. 81/82) auskommentiert werden.
+Falls Sperrvermerk oder Anhang nicht notwendig sind, können die entsprechenden Abschnitte in der `dokumentation.tex` (Zeilen 34/35 bzw. 88/89) auskommentiert werden.
 
 Die LaTeX-Dateien für die Kapitel befinden sich in `content/`, sämtliche Bilder werden in `images/` abgelegt.
 
