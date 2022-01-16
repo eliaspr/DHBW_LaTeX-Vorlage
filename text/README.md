@@ -41,6 +41,16 @@ Um die Quellen aus Citavi in das LaTeX Projekt zu exportieren werden folgende Sc
 5) Optional: `Ja` selektieren und einen Namen für die Export-Vorlage eingeben → Dann können beim zukünftigen Exportieren Schritte 2) bis 4) übersprungen werden indem die erstellte Vorlage dann im Menü `Datei` > `Exportieren` ausgewählt wird.
 6) Durch klicken auf `Weiter` wird der Export durchgeführt.
 
+# Nützliche Quellen und Software
+
+- **LaTeX-Grundlagen** | Die Basics der Sprache erklärt von Overleaf (Online-Editor für LaTeX-Dokumente) [*[Overleaf-Doku](https://www.overleaf.com/learn)*].
+- **Grundwissen: Mathematische Formeln** | Zusammenfassung/Merkblatt für mathematische Formeln und Symbole und eine Auflistung aller mathematischen Symbole, die in LaTeX enthalten sind [*[Zusammenfassung](https://www.grund-wissen.de/informatik/latex/mathematischer-formelsatz.html)*] [*[Auflistung Symbole](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)*].
+- **Equation Editor** | Grafischer Editor für das Erstellen von Gleichungen o.ä.. Beinhaltet eine Live-Vorschau und einige Standard-Funktionen [*[Link](https://latex.codecogs.com/eqneditor/editor.php)*].
+- **Tables Generator** | Erstellen von LaTeX-Tabellen in einer Webanwendung. Diese erstellt den notwendigen Code, der dann eingefüht werden kann [*[Link](https://www.tablesgenerator.com/)*].
+- **siunitx** | LaTeX-Paket um numerische Werte inklusive Einheiten übersichtlicher schreiben zu können sowie eine einheitliche Formatierung zu gewährleisten [*[Link](https://www.namsu.de/Extra/pakete/Siunitx.html)*].
+- **TikZ** und **pgfplots** | Sehr umfangreiche LaTeX-Pakete zum Erstellen von allen denkbaren Abbildungen. Dies sind bspw. Beschriftungen, Schemata, Funktionsgraphen [*[Overleaf-Tutorial](https://de.overleaf.com/learn/latex/Pgfplots_package)*] [*[Präsentation](https://docs.freitagsrunde.org/Veranstaltungen/techtalk/2016/slides-plotting-2016-02-12.pdf)*] [*[TikZ & PGF Handbuch](https://texample.net/media/pgf/builds/pgfmanualCVS2012-11-04.pdf)*] [*[pgfplots-Dokumentation](https://mirrors.rit.edu/CTAN/graphics/pgf/contrib/pgfplots/doc/pgfplots.pdf)*].
+- **TikzEdt** | Grafischer Editor für das Erstellen von TikZ-Abbildung mit Live-Vorschau und diversen nützlichen Funktionen [*[Webseite](http://www.tikzedt.org/)*]
+
 # Troubleshooting und Hinweise
 
 Bei Problemen mit der Vorlage gilt: *Google ist euer Freund*
