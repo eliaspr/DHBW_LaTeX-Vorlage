@@ -30,6 +30,17 @@ Mit den folgenden Befehlen kann der LaTeX-Compiler aufgerufen werden:
   Die erstellte Datei wird als `dokumentation.pdf` abgelegt
 - Löschen von temporären Dateien: `latexmk -c`
 
+# Quellen aus Citavi in LaTeX exportieren
+
+Um die Quellen aus Citavi in das LaTeX Projekt zu exportieren werden folgende Schritte befolgt:
+
+1) Mit geöffnetem Projekt `Datei` > `Exportieren` > `Exportieren`
+2) `Alle xx Titel in diesem Projekt` selektieren, dann `Weiter`
+3) Als Format `BibTeX` selektieren, dann `Weiter`
+4) `Eine Textdatei erstellen` selektieren, dann mit `Durchsuchen` die `bibliographie.bib`-Datei aus dem LaTeX-Ordner auswählen. Dann `Weiter`
+5) Optional: `Ja` selektieren und einen Namen für die Export-Vorlage eingeben → Dann können beim zukünftigen Exportieren Schritte 2) bis 4) übersprungen werden indem die erstellte Vorlage dann im Menü `Datei` > `Exportieren` ausgewählt wird.
+6) Durch klicken auf `Weiter` wird der Export durchgeführt.
+
 # Troubleshooting und Hinweise
 
 Bei Problemen mit der Vorlage gilt: *Google ist euer Freund*
