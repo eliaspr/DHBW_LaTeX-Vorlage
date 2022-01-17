@@ -30,6 +30,8 @@ Mit den folgenden Befehlen kann der LaTeX-Compiler aufgerufen werden:
   Die erstellte Datei wird als `dokumentation.pdf` abgelegt
 - Löschen von temporären Dateien: `latexmk -c`
 
+**Alternativ** kann das Kompilieren auch durch einen Doppelklick auf `compile.bat` angestoßen werden (Wichtig: *nicht* `compile.ps1`). Das Skript stellt sicher, dass die `dokumentation.pdf` nicht noch irgendwo geöffnet ist.
+
 # Quellen aus Citavi in LaTeX exportieren
 
 Um die Quellen aus Citavi in das LaTeX Projekt zu exportieren werden folgende Schritte befolgt:
