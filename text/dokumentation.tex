@@ -15,6 +15,9 @@
 % Die folgende Zeile auskommentieren, falls kein Gutachter vorhanden ist (Gutachter i.d.R. nur Bachelorarbeit)
 \newcommand{\defGutachter}{Max Musterbetreuer, M. Sc.}
 
+% Folgende Zeile auskommentieren, um alle Quellenangaben im Literaturverzeichnis anzuzeigen. 
+% \newcommand{\defAlleQuellenZeigen}
+
 \input{ads/header}
 
 \makeglossaries
@@ -79,6 +82,7 @@
     }
 
     % Literaturverzeichnis
+    \ifdefined\defAlleQuellenZeigen\nocite{*}\fi
     \printbibliography
 
     % Glossar
