@@ -18,7 +18,7 @@ Folgende Angaben müssen angepasst werden:
 - `ads/glossary.tex`: Glossareinträge
 - `ads/sperrvermerk.tex`: Sperrvermerk
 - `images/company.png`: Ersetzen durch das eigene Firmenlogo
-- `dokumentation.tex`, Zeilen 1-12: Angaben zur Arbeit
+- `dokumentation.tex`, Angaben zur Arbeit im "Konfigurationsbereich"
 
 Falls Sperrvermerk oder Anhang nicht notwendig sind, können die entsprechenden Abschnitte in der `dokumentation.tex` (Zeilen 34/35 bzw. 88/89) auskommentiert werden.
 
