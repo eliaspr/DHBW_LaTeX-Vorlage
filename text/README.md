@@ -63,5 +63,5 @@ Fehlermeldungen von LaTeX sind teilweise sehr kryptisch. Es kann manchmal hilfre
 
 Der LaTeX-Compiler führt beim Bauen gerne mehrere Durchgänge durch, ich weiß nicht warum habe aber auch nicht nach einem Weg gesucht, dies zu umgehen oder zu verhindern. Das Bauen kann allgemein relativ lange dauern, profitiert aber defintiv von mehr verfügbarer CPU-Leistung.
 
-Die wesentliche Konfiguratoin der Pakete befindet sich in `header.tex`. Die Datei ist ein absolutes Durcheinander und es gilt: Alle Änderungen dort sind auf eigene Gefahr. Ich habe immer nach dem Prinzip *never touch a running system* gehendelt.
+Die wesentliche Konfiguration der Pakete befindet sich in `header.tex`. Die Datei ist ein absolutes Durcheinander und es gilt: Alle Änderungen dort sind auf eigene Gefahr. Ich habe immer nach dem Prinzip *never touch a running system* gehendelt.
 
