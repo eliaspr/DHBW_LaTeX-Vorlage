@@ -177,3 +177,17 @@
     \end{quotation}
     \vspace*{0.55em}
 }
+
+\ifdefined\defEntwurf
+\usepackage{background}
+\usepackage{datetime2}
+\SetBgContents{\texttt{Entwurf, Stand vom \DTMtoday{} \DTMcurrenttime}}
+\SetBgScale{1.1}
+\SetBgOpacity{1}
+\SetBgColor{red}
+\SetBgPosition{current page.south west}
+\SetBgAnchor{right}
+\SetBgHshift{0.7cm}
+\SetBgVshift{-0.7cm}
+\SetBgAngle{90}
+\fi
