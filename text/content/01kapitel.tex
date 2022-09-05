@@ -17,10 +17,25 @@ In diesem Kapitel sind einige LaTeX-Basics gezeigt sowie nützliche Pakete und B
 Die \ac{DHBW} wurde am 1. März 2009 gegründet \cite{DHBW-wirueberuns}.
 
 \begin{minipage}{\linewidth}
-    \begin{lstlisting}[language=Python, caption={Exemplarisches Code-Listing: Einfache for-Schleife mit Konsolenausgabe.}]
-    for i in range(10):  # In Listings können jetzt auch Umlaute stehen (z.B.: äöüß) 
-        print(i, i * i)
-    \end{lstlisting}
+\begin{lstlisting}[language=Python, caption={Exemplarisches Code-Listing: Beispielcode aus \href{https://de.wikipedia.org/wiki/Python_(Programmiersprache)}{Wikipedia}.}]
+# In Listings können jetzt auch Umlaute stehen (z.B.: äöüß) 
+def stack():
+    l = []
+
+    def pop():
+        if not is_empty():
+            return l.pop()
+
+    def push(element):
+        l.append(element)
+
+    def is_empty():
+        return len(l) == 0
+
+    return pop, push, is_empty
+
+    pop, push, is_empty = stack()
+\end{lstlisting}
 \end{minipage}
 
 \begin{table}[ht]
