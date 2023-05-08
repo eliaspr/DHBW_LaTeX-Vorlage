@@ -76,15 +76,15 @@
 \author{\defAutor}
 \date{\defAbgabedatum}
 
-\usepackage[%
+\usepackage[
+    \ifdefined\defHideLinkBorders pdfborder={0 0 0},\fi
     pdftitle={\defTitel},
     pdfauthor={\defAutor},
     pdfsubject={\defArbeit},
     pdfcreator={pdflatex, LaTeX with KOMA-Script},
     pdfpagemode=UseOutlines,
     pdfdisplaydoctitle=true, 
-    pdflang={de},
-    pdfborder={0 0 0}
+    pdflang={de}
 ]{hyperref}
 
 \hypersetup{%
