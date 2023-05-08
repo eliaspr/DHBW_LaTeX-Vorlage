@@ -77,7 +77,7 @@
 \date{\defAbgabedatum}
 
 \usepackage[
-    \ifdefined\defHideLinkBorders pdfborder={0 0 0},\fi
+    \ifdefined\defShowLinkBorders pdfborder={0 0 1}, \else pdfborder={0 0 0},\fi
     pdftitle={\defTitel},
     pdfauthor={\defAutor},
     pdfsubject={\defArbeit},
