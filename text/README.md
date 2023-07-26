@@ -61,7 +61,7 @@ Bei manchen PDF-Readern, kann LaTeX die Datei **nicht** neu kompilieren, währen
 
 Fehlermeldungen von LaTeX sind teilweise sehr kryptisch. Es kann manchmal hilfreich sein, die letzten Änderungen nochmal sorgfältig anzuschauen, dann findet man meistens Syntax-Fehler, falls sich welche einschleichen. Oft kann auch ein Clean-Befehl (`latexmk -c`) plötzlich aufgetretende oder unverständliche Fehler auflösen.
 
-Der LaTeX-Compiler führt beim Bauen gerne mehrere Durchgänge durch, ich weiß nicht warum habe aber auch nicht nach einem Weg gesucht, dies zu umgehen oder zu verhindern. Das Bauen kann allgemein relativ lange dauern, profitiert aber defintiv von mehr verfügbarer CPU-Leistung.
+Der LaTeX-Compiler führt beim Bauen gerne mehrere Durchgänge durch, das ist normal ([warum?](https://tex.stackexchange.com/a/573761)). Das Bauen kann allgemein relativ lange dauern, profitiert aber defintiv von mehr verfügbarer CPU-Leistung.
 
 Die wesentliche Konfiguration der Pakete befindet sich in `header.tex`. Die Datei ist ein absolutes Durcheinander und es gilt: Alle Änderungen dort sind auf eigene Gefahr. Ich habe immer nach dem Prinzip *never touch a running system* gehendelt.
 
